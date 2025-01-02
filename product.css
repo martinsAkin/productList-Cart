@@ -15,7 +15,7 @@
   margin-left: 2rem;
 }
 .ShopDiv{
-  background-color: hsl(13, 31%, 94%);
+  background: hsl(13, 31%, 94%);
   margin: 3rem 5rem;
   display: flex;
   flex-direction: row-reverse;
@@ -129,8 +129,9 @@ aside ul{
 
 @media (min-width: 320px) and (max-width: 599px) {
   .ShopDiv{
-    background-color: hsl(13, 31%, 94%);
-    margin: 1rem 1rem;
+    background: hsl(13, 31%, 94%);
+    width: max-content;
+    margin: 0.1rem;
     display: flex;
     flex-direction: column-reverse;
     gap: 3rem;
@@ -182,11 +183,6 @@ aside ul{
     justify-content: space-around;
     font-weight: 400;
   }
-  /* aside{
-    position: relative;
-    height: 45rem;
-    width: 25rem;
-  } */
   .cart{
   box-shadow: 5px 5px 10px hsl(13, 31%, 94%);
   background-color: white;
