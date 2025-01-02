@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="product.css">
+  <title>Frontend Mentor | Product list with cart</title>
+
+</head>
+<body>
+
+<div class="ShopDiv">
+  
+  <aside>
+
+        <div class="cart">
+          <h2 class="header">Your Cart ( <span id="item-count"></span> )</h2>
+          
+          <ul id="cart-items">
+             <!-- Your added items will appear here -->
+          </ul><hr>
+          <div class="total">
+            Order Total: <div style="font-weight: 900;
+          font-size: 20px;">$<span id="order-total">0.00</span></div>
+          </div>
+          <button id="carbon-neutral"><img src="/ProjectAdditions/images/icon-carbon-neutral.svg" style="width: 1rem; height: 1rem;">This is a <span style="font-weight: 900;">carbon-neutral</span> delivery</button>
+          <button id="confirm-order" onclick="Verify_Id()">Confirm Order</button>
+          
+        </div>
+           
+
+  </aside>
+
+
+  <div id="dessert">
+    <span class="dessert_heading">Desserts</span>
+ 
+    <div class="products">
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-waffle-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Waffle with Berries" data-price="6.50"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+
+             <div class="prodDesc">
+        <span class="name"> Waffle</span>
+        <span class="prod_ID">Waffle with Berries</span>
+        <span class="price">$6.50</span>
+       </div>
+      
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-creme-brulee-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Vanilla Bean Crème Brûlée" data-price="7.00"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+
+      <div class="prodDesc">
+        <span class="name"> Crème Brûlée</span>
+        <span class="prod_ID">Vanilla Bean Crème Brûlée</span>
+        <span class="price">$7.00</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-macaron-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Macaron Mix of Five" data-price="8.00"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+      
+      <div class="prodDesc">
+        <span class="name">Macaron</span>
+        <span class="prod_ID">Macaron Mix of Five</span>
+        <span class="price">$8.00</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-tiramisu-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Classic Tiramisu" data-price="5.50"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+
+      <div class="prodDesc">
+        <span class="name">Tiramisu</span>
+        <span class="prod_ID">Classic Tiramisu</span>
+        <span class="price">$5.50</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-baklava-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Pistachio Baklava" data-price="4.00"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+
+      <div class="prodDesc">
+        <span class="name">Baklava</span>
+        <span class="prod_ID">Pistachio Baklava</span>
+        <span class="price">$4.00</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-meringue-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Lemon Meringue Pie" data-price="5.00"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+
+      <div class="prodDesc">
+        <span class="name"> Pie</span>
+        <span class="prod_ID">Lemon Meringue Pie</span>
+        <span class="price">$5.00</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-cake-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Red Velvet Cake" data-price="4.50"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+      
+      <div class="prodDesc">
+        <span class="name">Cake</span>
+        <span class="prod_ID">Red Velvet Cake</span>
+        <span class="price">$4.50</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-brownie-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Salted Caramel Brownie" data-price="4.50"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+
+      <div class="prodDesc">
+        <span class="name">Brownie</span>
+        <span class="prod_ID">Salted Caramel Brownie</span>
+        <span class="price">$4.50</span>
+      </div>
+    </div>
+
+    <div class="items">
+      <div>
+        <img class="image" src="/ProjectAdditions/images/image-panna-cotta-desktop.jpg" alt="">
+      </div>
+      <button class="cart-Button" data-name="Vanilla Panna Cotta" data-price="6.50"><img src="/ProjectAdditions/images/icon-add-to-cart.svg">Add to Cart</button>
+
+      <div class="prodDesc">
+        <span class="name"> Panna Cotta</span>
+        <span class="prod_ID">Vanilla Panna Cotta</span>
+        <span class="price">$6.50</span>
+      </div>
+    </div>
+    </div>
+  </div>
+
+</div>
+
+<script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nova Square', cursive;
+    margin: 0;
+    user-select: none;
+}
+body{
+    background: linear-gradient(to right, red,blue,white);
+}
+#general button{
+    font-size: 25px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+    border: none;
+    margin-top: 25px;
+    text-align: center;
+}
+#general button:hover{
+    background-color: black;
+    color: wheat;
+    transition: 1s ease-in;
+    outline: none;    
+}
+.add{
+    width: 2rem;
+    height: 1rem;
+    border-radius: 5px;
+    background: teal;
+}
+.first{
+    border: none;
+    border-radius: 5px; 
+    box-shadow: 2px 2px 3px gray;
+    outline: none;
+    height: fit-content;
+}
+aside li{
+     padding: 0.5rem 1.4rem; 
+     border-radius: 10px;
+     transition: 1s ease-in-out;
+}
+img{
+    width: 100%;
+
+}
+.login-general-div{
+    margin: 15% 25%;
+    width: max-content;
+    height: 25rem;
+    display: flex;
+    
+}
+.log{
+    text-decoration: underline;
+    color: maroon;
+}
+input{
+    border: none;
+    outline: none;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 10px;
+    width: 15rem;
+}
+#input1, #input{
+    border: none;
+    outline: none;
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem;
+    border-radius: 10px;
+    width: 15rem;   
+}
+#input:focus, #input1   :focus{
+    outline: none;
+    border: 2px solid grey;
+    transition: 1s ease-in-out;
+    width: 17rem;
+
+}
+ .passUpdate:focus{
+        width: 17rem;
+ }
+.submit{
+    margin-top: 1.5rem;
+    text-align: center;
+    width: 5rem;
+    height: 2rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+#link{
+    text-decoration: none;
+}
+.submit:active{
+    background-color: black;
+    color: burlywood;
+    
+}
+
+.div2{
+    position: absolute;
+    top: 12.667rem;
+    background-color: chocolate;
+    display: none;
+    padding-top: 1.75rem;
+    padding-bottom: 3.06rem;
+    border-top-left-radius: 30px;
+    padding-left: 2em;
+    width: 25rem;
+    height: 25rem;
+    border-bottom-left-radius: 100px;
+    transition: ease-in-out 1s;
+}
+.div{
+    padding-right: 1rem;
+    padding-top: 1.5rem;
+    background-color: burlywood;
+    /* margin-right: 6rem; */
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 30px;
+    padding-left: 2em;
+    width: 25rem;
+    /* transition: 1s ease-in-out; */
+}
+.display{
+    width: 25rem;
+    padding: 7rem 2rem;
+    border-top-right-radius: 15em;
+    border-bottom-right-radius: 2rem;
+}
+#womenClothings{
+    left: 20.1%;
+   
+}
+
